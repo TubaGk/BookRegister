@@ -93,9 +93,9 @@ const BookComponent = () => {
 
   function pageTitle(){
     if(id){
-      return <h2 className='text-center'>Update Book</h2>
+      return <h2 className='text-center'>Kitap Bilgisi Düzenleme</h2>
     }else{
-      return<h2 className='text-center'>Add Book</h2>
+      return<h2 className='text-center'>Yeni Kitap Ekleme</h2>
     }
   }
 
@@ -110,7 +110,7 @@ const BookComponent = () => {
           <div className='card-body'>
             <form>
               <div className='form-group mb-2'>
-                <label className='form-label'>Book Name</label>
+                <label className='form-label'>Kitap Adı:</label>
                 <input
                   type='text'
                   placeholder='kitap Adı giriniz'
@@ -123,7 +123,7 @@ const BookComponent = () => {
                 {errors.bookName && <div className='invalid-feedback'>{errors.bookName}</div>}
               </div>
               <div className='form-group mb-2'>
-                <label className='form-label'>Author Name</label>
+                <label className='form-label'>Yazar Adı:</label>
                 <input
                   type='text'
                   placeholder='Yazar Adı giriniz'
@@ -136,7 +136,7 @@ const BookComponent = () => {
                 {errors.authorName && <div className='invalid-feedback'>{errors.authorName}</div>}
               </div>
               <div className='form-group mb-2'>
-                <label className='form-label'>Book Genre</label>
+                <label className='form-label'>Kitap Türü:</label>
                 <input
                   type='text'
                   placeholder='kitap türü giriniz'
@@ -148,8 +148,9 @@ const BookComponent = () => {
                 </input>
                 {errors.bookGenre && <div className='invalid-feedback'>{errors.bookGenre}</div>}
               </div>
-              <button className='btn btn-success'onClick={saveOrUpdateBook}>Ekle
+              <div className='offset-md-5'><button className='btn btn-success btn-lg'onClick={saveOrUpdateBook}>Kaydet
               </button>
+              </div>
             </form>
           </div>
         </div>

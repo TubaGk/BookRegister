@@ -42,7 +42,6 @@ const ListBookComponent = () => {
   return (
     <div className='container'>
         <h2 className='text-center'>Kitap Listesi</h2>
-        <button type="button" class="btn btn-primary mb-2" onClick={addNewBook}> + Add Book</button>
         <table className='table table-striped table-bordered'>
             <thead>
                 <tr>
@@ -72,6 +71,7 @@ const ListBookComponent = () => {
                 }
             </tbody>
         </table>
+        <button type="button" class="btn btn-primary btn-sm mb-2" onClick={addNewBook}> + Kitap Ekle</button>
     </div>
   )
 }

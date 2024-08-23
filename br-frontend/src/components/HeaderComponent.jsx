@@ -4,7 +4,7 @@ const HeaderComponent = () => {
         <div>
             <header>
                 <nav className="navbar navbar-dark bg-dark">
-                <a className="navbar-brand" href="#">KİTAPÇI</a>
+                <div className="offset-md-1"><a className="navbar-brand" href="#">KİTAP KAYIT</a></div>
 
                 </nav>
             </header>
