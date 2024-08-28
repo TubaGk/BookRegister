@@ -19,9 +19,9 @@ public class UserController {
     public ResponseEntity<?> loginUser(@RequestBody User user) {
         boolean isAuthenticated = userService.authenticate(user.getUsername(), user.getPassword(), user.getEmail());
         if (isAuthenticated) {
-            return ResponseEntity.ok("Authenticated");
+            return ResponseEntity.ok("Kimilk Doğrulandı");
         } else {
-            return ResponseEntity.status(401).body("Invalid credentials");
+            return ResponseEntity.status(401).body("Hatalı Kimlik");
         }
     }
 

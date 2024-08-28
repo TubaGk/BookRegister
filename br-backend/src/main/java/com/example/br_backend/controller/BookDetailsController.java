@@ -46,7 +46,7 @@ public class BookDetailsController {
     @DeleteMapping("{id}")
     public ResponseEntity<String> deleteBook(@PathVariable("id") Long bookId){
         bookDetailsService.deleteBook(bookId);
-        return ResponseEntity.ok("Delete Successfuly!!");
+        return ResponseEntity.ok("Silme işlemi Başarılı!!");
     }
 
 

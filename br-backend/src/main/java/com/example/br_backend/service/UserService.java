@@ -20,7 +20,7 @@ public class UserService {
 
     public User createUser(User user) {
         if (userRepository.findByEmail(user.getEmail()) != null) {
-            throw new IllegalArgumentException("Email already in use");
+            throw new IllegalArgumentException("Bu mail zaten mevcut!!");
         }
         return userRepository.save(user);
     }
